@@ -53,11 +53,11 @@ for:
     - path: build/Release/FBX2glTF-windows-x64.exe
 
   deploy:
-    tag: $(APPVEYOR_REPO_TAG_NAME)
+    tag: FBX2glTF-cocos-v$(APPVEYOR_BUILD_VERSION)
     description: ''
     provider: GitHub
     auth_token:
-      secure: OSvhQP0O9uaH+OFOJpbGiiBMRTOJ+H/VJHqVBhq39RNDnOfUEr/yjJNKh3JSdNqj
+      secure: p8pkLdbk2vHaMGg9hn0HzreUwf1W6IsWx7yNwx2wUIEcjVpmFEX1jAkuXXZqZeel
     artifact: build/Release/FBX2glTF-windows-x64.exe
     draft: true
     prerelease: true
@@ -97,11 +97,11 @@ for:
     - path: build/FBX2glTF-darwin-x64
 
   deploy:
-    tag: $(APPVEYOR_REPO_TAG_NAME)
+    tag: FBX2glTF-cocos-v$(APPVEYOR_BUILD_VERSION)
     description: ''
     provider: GitHub
     auth_token:
-      secure: OSvhQP0O9uaH+OFOJpbGiiBMRTOJ+H/VJHqVBhq39RNDnOfUEr/yjJNKh3JSdNqj
+      secure: p8pkLdbk2vHaMGg9hn0HzreUwf1W6IsWx7yNwx2wUIEcjVpmFEX1jAkuXXZqZeel
     artifact: build/FBX2glTF-darwin-x64
     draft: true
     prerelease: true
