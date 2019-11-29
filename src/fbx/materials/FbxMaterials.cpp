@@ -84,7 +84,7 @@ const std::shared_ptr<FbxMaterialInfo> FbxMaterialsAccess::GetMaterial(
   if (mappingMode != FbxGeometryElement::eNone) {
     const int materialNum =
         indices->GetAt((mappingMode == FbxGeometryElement::eByPolygon) ? polygonIndex : 0);
-    if (materialNum < 0) {
+    if (materialNum < 0 || summaries.empty()) {
       return nullptr;
     }
     return summaries.at((unsigned long)materialNum);
@@ -96,7 +96,7 @@ const std::vector<std::string> FbxMaterialsAccess::GetUserProperties(const int p
   if (mappingMode != FbxGeometryElement::eNone) {
     const int materialNum =
         indices->GetAt((mappingMode == FbxGeometryElement::eByPolygon) ? polygonIndex : 0);
-    if (materialNum < 0) {
+    if (materialNum < 0 || summaries.empty()) {
       return std::vector<std::string>();
     }
     return userProperties.at((unsigned long)materialNum);
