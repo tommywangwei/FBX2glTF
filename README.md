@@ -1,10 +1,14 @@
 
-This is a git branch which behaves like a git mirror of NPM package @cocos/fbx2gltf.
+This is a git branch which behaves like a git mirror of NPM package [@cocos/fbx2gltf](https://www.npmjs.com/package/@cocos/fbx2gltf).
 Note this is not same as NPM package [fbx2gltf](https://www.npmjs.com/package/fbx2gltf).
 
- @cocos/fbx2gltf is hosted by Cocos and is used in productions of Cocos.
- It contains (only) FBX2glTF binaries for Windows and MacOS.
+`@cocos/fbx2gltf` is hosted by Cocos and is used in productions of Cocos.
+It contains (only) FBX2glTF binaries(built from [Cocos fork](https://github.com/cocos-creator/FBX2glTF) of [FBX2glTF](https://github.com/facebookincubator/FBX2glTF)) for Windows and MacOS.
 
 ## Publish a new version
 
-Just change version number in [postinstall.js](postinstall) file and run `npm publish`.
+Be sure you have rights to publish package to [@cocos](https://www.npmjs.com/~cocos).
+
+Just change version number in [sync.js](sync) file and run `node ./sync.js & npm --registry https://registry.npmjs.org/ publish`.
+
+Note, it's your responsibility to ensure `node ./sync.js` is running successfully.

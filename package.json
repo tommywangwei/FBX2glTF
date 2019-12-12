@@ -1,8 +1,10 @@
 {
   "name": "@cocos/fbx2gltf",
-  "version": "1.0.0",
-  "scripts": {
-    "postinstall": "node ./postinstall.js"
+  "version": "1.0.1",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": ""
   },
   "author": "",
   "license": "BSD",
