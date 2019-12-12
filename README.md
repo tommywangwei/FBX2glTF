@@ -3,7 +3,9 @@ This is a git branch which behaves like a git mirror of NPM package [@cocos/fbx2
 Note this is not same as NPM package [fbx2gltf](https://www.npmjs.com/package/fbx2gltf).
 
 `@cocos/fbx2gltf` is hosted by Cocos and is used in productions of Cocos.
-It contains (only) FBX2glTF binaries(built from [Cocos fork](https://github.com/cocos-creator/FBX2glTF) of [FBX2glTF](https://github.com/facebookincubator/FBX2glTF)) for Windows and MacOS.
+It contains (only) FBX2glTF binaries(built from [Cocos fork](https://github.com/cocos-creator/FBX2glTF) of [FBX2glTF](https://github.com/facebookincubator/FBX2glTF)) for Windows and MacOS and Javascript API files.
+The Javascript API files are copied or modified
+from those in commit https://github.com/facebookincubator/FBX2glTF/commit/37f992321eeb2d593f86371a1fe39c26a0e8467c .
 
 ## Publish a new version
 
